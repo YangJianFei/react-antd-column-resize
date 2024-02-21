@@ -9,12 +9,16 @@ const useColumns = ({ columns, minWidth = 120, maxWidth = 2000, }: resizeDataTyp
   const [resizableColumns, setResizableColumns] = useState<Column[]>([]);
 
   const calculateWidth = useCallback((column: Column): number => {
-    const isLeaf = Array.isArray(column?.children);
-    let totalWidth = isLeaf ? 0 : Number((column?.width ?? Number(minWidth + 15)));
-    if (isLeaf) {
-      totalWidth = + (column?.children as [])?.reduce((sum, child) => sum + calculateWidth(child), 0);
+    if (!column.hideInTable) {
+      const isLeaf = Array.isArray(column?.children);
+      let totalWidth = isLeaf ? 0 : Number((column?.width ?? Number(minWidth + 15)));
+      if (isLeaf) {
+        totalWidth = + (column?.children as [])?.reduce((sum, child) => sum + calculateWidth(child), 0);
+      }
+      return totalWidth;
+    } else {
+      return 0;
     }
-    return totalWidth;
   }, [minWidth])
 
   const tableWidth = useMemo(() => {
