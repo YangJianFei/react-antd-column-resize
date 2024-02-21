@@ -1,6 +1,7 @@
 {
   "name": "@yangjianfei/react-antd-column-resize",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "活跃中，修复了一些bug，欢迎大家提issue一起维护",
   "homepage": "https://varown.github.io/react-antd-column-resize/components/use-antd-column-resize",
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "father doctor && npm run build",
+    "prepublishOnly1": "father doctor && npm run build",
     "start": "npm run dev"
   },
   "commitlint": {

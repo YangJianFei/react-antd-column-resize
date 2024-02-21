@@ -1,4 +1,5 @@
 <h1 align="center">欢迎使用 react-antd-column-resize</h1>
+<span>活跃中，修复了一些bug，欢迎大家提issue一起维护。有问题可私聊微信：yjf163163</span>
 
 > 中文文档 | [English](README_EN.md) [![NPM version](https://img.shields.io/npm/v/react-antd-column-resize.svg?style=flat)](https://npmjs.org/package/react-antd-column-resize) [![NPM downloads](http://img.shields.io/npm/dm/react-antd-column-resize.svg?style=flat)](https://npmjs.org/package/react-antd-column-resize)
 
